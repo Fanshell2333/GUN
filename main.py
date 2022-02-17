@@ -4,18 +4,26 @@
 # 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
 
 
-nums = [9, 4, 1, 7, 6, 4]
-k = 3
+matrix = [[76618,42558,65788,20503,29400,54116]]
 
 
-def minimumDifference(nums, k):
-    nums = sorted(nums)
-    ans = nums[k - 1] - nums[0]
-    for i in range(k, len(nums)):
-        right = nums[i - k + 1]
-        left = nums[i]
-        ans = min(ans, left - right)
-    return ans
+result = []
+if len(matrix) == 1:
+    result = [min(matrix[0])]
 
-minimumDifference(nums, k)
+for i in range(len(matrix)):
+    min_idx = matrix[i].index(min(matrix[i]))
+    flag = False
+    for j in range(len(matrix)):
+        if i != j:
+            if matrix[i][min_idx] <= matrix[j][min_idx]:
+                flag = False
+                break
+            else:
+                flag = True
+    if flag:
+        result.append(matrix[i][min_idx])
+
+
+print(result)
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
