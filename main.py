@@ -2,28 +2,37 @@
 
 # 按 Shift+F10 执行或将其替换为您的代码。
 # 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
+box = [[1, 1, 1, 1, 1, 1], [-1, -1, -1, -1, -1, -1], [1, 1, 1, 1, 1, 1], [-1, -1, -1, -1, -1, -1]]
+loc = [0, 5]
 
 
-matrix = [[76618,42558,65788,20503,29400,54116]]
+def find_exit(loc, box):
+    if loc[0] == len(box) or loc[1] == -1:
+        return loc[1]
 
-
-result = []
-if len(matrix) == 1:
-    result = [min(matrix[0])]
-
-for i in range(len(matrix)):
-    min_idx = matrix[i].index(min(matrix[i]))
-    flag = False
-    for j in range(len(matrix)):
-        if i != j:
-            if matrix[i][min_idx] <= matrix[j][min_idx]:
-                flag = False
-                break
+    row = loc[0]
+    column = loc[1]
+    cur = box[row][column]
+    if cur == 1:
+        if column == len(box[row])-1:
+            loc[1] = -1
+        else:
+            if box[row][column + 1] == 1:
+                loc[0] += 1
+                loc[1] += 1
             else:
-                flag = True
-    if flag:
-        result.append(matrix[i][min_idx])
+                loc[1] = -1
+    else:
+        if column == 0:
+            loc[1] = -1
+        else:
+            if box[row][column - 1] == -1:
+                loc[0] += 1
+                loc[1] -= 1
+            else:
+                loc[1] = -1
+    return find_exit(loc, box)
 
-
-print(result)
+# for i in range(len(box[0])):
+print(find_exit(loc, box))
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
