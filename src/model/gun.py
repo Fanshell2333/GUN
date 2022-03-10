@@ -3,12 +3,11 @@
 import torch
 import torch.nn as nn
 from transformers import BertModel, AlbertModel
-import numpy as np
 from typing import Dict, List
 from torch.nn import ModuleDict
 from src.model.atten_unet import AttentionUNet
 from util.data_util import get_class_mapping
-from util.layers import ElementWiseMatrixAttention, DotProductMatrixAttention, CosineMatrixAttention, \
+from src.model.layers import ElementWiseMatrixAttention, DotProductMatrixAttention, CosineMatrixAttention, \
     BilinearMatrixAttention, \
     LinearMatrixAttention, InputVariationalDropout, get_text_field_mask
 from torch.nn.utils.rnn import pad_sequence
@@ -17,7 +16,7 @@ from torch.nn.utils.rnn import pad_sequence
 class Gun(nn.Module):
     def __init__(self,
                  embedder: str = 'bert',
-                 encoder: str = 'lstm',
+                 encoder: str = 'bilstm',
                  super_mode: str = 'before',
                  unet_down_channel: int = 256,
                  inp_drop_rate: float = 0.2,
@@ -55,6 +54,7 @@ class Gun(nn.Module):
                 dropout=inp_drop_rate,
                 batch_first=True
             )
+            self.output_size = 200
         elif encoder == 'bilstm':
             self.encoder = nn.LSTM(
                 input_size=768,
@@ -64,6 +64,7 @@ class Gun(nn.Module):
                 batch_first=True,
                 bidirectional=True
             )
+            self.output_size = 400
         else:
             raise NameError("Name {} is not in rnn model list.".format(embedder))
 
@@ -236,7 +237,7 @@ class Gun(nn.Module):
 
 def main():
     model = Gun()
-
+    print(model)
 
 if __name__ == '__main__':
     main()

@@ -58,6 +58,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[2055]蜡烛之间的盘子.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[2055]蜡烛之间的盘子.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com2055" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[2055]蜡烛之间的盘子.py" />
+              <option name="titleSlug" value="plates-between-candles" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[2104]子数组范围和.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[2104]子数组范围和.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com2104" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[2104]子数组范围和.py" />
+              <option name="titleSlug" value="sum-of-subarray-ranges" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[27]移除元素.py">
           <value>
             <LeetcodeEditor>
@@ -66,6 +88,17 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[27]移除元素.py" />
               <option name="titleSlug" value="remove-element" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[504]七进制数.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[504]七进制数.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com504" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[504]七进制数.py" />
+              <option name="titleSlug" value="base-7" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -88,6 +121,50 @@
               <option name="host" value="leetcode-cn.com" />
               <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[540]有序数组中的单一元素.py" />
               <option name="titleSlug" value="single-element-in-a-sorted-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[564]寻找最近的回文数.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[564]寻找最近的回文数.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com564" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[564]寻找最近的回文数.py" />
+              <option name="titleSlug" value="find-the-closest-palindrome" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[589]N 叉树的前序遍历.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[589]N 叉树的前序遍历.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com589" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[589]N 叉树的前序遍历.py" />
+              <option name="titleSlug" value="n-ary-tree-preorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[6]Z 字形变换.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[6]Z 字形变换.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com6" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[6]Z 字形变换.py" />
+              <option name="titleSlug" value="zigzag-conversion" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[798]得分最高的最小轮调.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/doc/content/[798]得分最高的最小轮调.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com798" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$USER_HOME$/AppData/Local/Temp/leetcode/editor/cn/[798]得分最高的最小轮调.py" />
+              <option name="titleSlug" value="smallest-rotation-with-highest-score" />
             </LeetcodeEditor>
           </value>
         </entry>
